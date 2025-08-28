@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: #073980;
+  color: white;
+  font-family: "Lexend", sans-serif;
+}

@@ -1,0 +1,152 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-top: 80px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile h1 {
+  width: 70%;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profile h1 span {
+  background: linear-gradient(270deg, #c83200 10%, #ff8000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile p {
+  width: 75%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.profile-action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+/* Base button style */
+.profile-action a,
+.profile-resume {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Gradient button */
+.profile-connect a,
+.nav-connect a {
+  background: linear-gradient(264deg, #c83200, #ff8000);
+  color: white;
+}
+
+.profile-connect a:hover,
+.nav-connect a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 128, 0, 0.4);
+  border: 2px solid white;
+}
+
+/* Outline button */
+.profile-resume {
+  border: 2px solid #fff;
+  color: white;
+  background: transparent;
+}
+
+.profile-resume:hover {
+  border-color: #ff8000;
+  color: #ff8000;
+  transform: scale(1.05);
+}
+
+/* Accessibility */
+.profile-action a:focus,
+.profile-resume:focus {
+  outline: 3px solid #ff8000;
+  outline-offset: 4px;
+}
+
+/* 📱 Responsive Breakpoints */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .profile h1 {
+    font-size: 2.5rem;
+    width: 85%;
+  }
+
+  .profile p {
+    width: 85%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .profile img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .profile {
+    gap: 35px;
+  }
+
+  .profile h1 {
+    font-size: 1.9rem;
+    width: 95%;
+  }
+
+  .profile p {
+    width: 95%;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .profile img {
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-action {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .profile-action a,
+  .profile-resume {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}

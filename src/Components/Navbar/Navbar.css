@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Michroma&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap");
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+  position: relative;
+}
+/*Menu*/
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 1.2em;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+.nav-menu a:hover {
+  background: linear-gradient(267deg, #c83200 0.36%, #ff8000 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-menu a.active {
+  background: linear-gradient(267deg, #c83200 0.36%, #ff8000 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 900px) {
+  .navbar {
+    margin: 20px 40px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 50px;
+    border-radius: 12px;
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
