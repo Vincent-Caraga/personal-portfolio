@@ -10,9 +10,10 @@ const Profile = () => {
         <span>I'm Vincent C. Caraga,</span> aspiring full-stack developer
       </h1>
       <p>
-        I am passionate in software development specifically in Web Development.
+        I am passionate about software development, specifically in web
+        Development.
         <br />
-        I took Bachelor of Science in Information System at the Technological
+        I took a Bachelor of Science in Information System at the Technological
         University of the Philippines - Manila. <br />I am learning modern web
         development using JavaScript frameworks/libraries like PostgreSQL,
         Express.js, React.js, Node.js.
@@ -24,7 +25,7 @@ const Profile = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Connect with me in LinkedIn
+            Connect with me on LinkedIn
           </a>
         </div>
         <div className="nav-connect">

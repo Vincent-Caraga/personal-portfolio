@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="services" id="service">
       <div className="services-title">
-        <h1>My Services</h1>
+        <h1>My Projects</h1>
       </div>
       <div className="service-container">
         {Services_Data.map((service, index) => {
@@ -16,7 +16,17 @@ const Services = () => {
               <h2>{service.s_name}</h2>
               <p>{service.s_desc}</p>
               <div className="services-readmore">
-                <p>Read more</p>
+                {service.link ? (
+                  <a
+                    href={service.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read more
+                  </a>
+                ) : (
+                  <p>Read more</p>
+                )}
               </div>
             </div>
           );

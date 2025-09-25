@@ -8,7 +8,9 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-left">
             <h1>Vincent Caraga</h1>
-            <p>Welcome to my Personal Portfolio and Connect me with LinkedIn</p>
+            <p>
+              Welcome to my Personal Portfolio and Connect me with on LinkedIn
+            </p>
           </div>
           <div className="footer-top-right">
             <div className="contacts">

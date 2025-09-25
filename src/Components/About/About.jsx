@@ -15,10 +15,10 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I am focus on web development and currently learning Full-Stack
-              Development from Udemy.
+              I am focused on web development and currently learning full-stack
+              development from Udemy.
             </p>
-            <p>I also learning first React.js a JavaScript frontend library.</p>
+            <p>I am also learning first React.js a JavaScript frontend library.</p>
           </div>
           <div className="about-skills">
             <div className="about-skill">

@@ -41,9 +41,8 @@ const Navbar = () => {
           }}
           className={menu === "services" ? "active" : ""}
         >
-          SERVICES
+          PROJECTS
         </a>
-        <li>Portfolio</li>
         <a
           href="#footer-contact"
           onClick={() => {

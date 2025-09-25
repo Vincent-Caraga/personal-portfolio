@@ -55,6 +55,15 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.services-readmore a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.services-readmore a:hover {
+  text-decoration: underline;
+}
 .services-readmore:hover {
   background: linear-gradient(270deg, #ff7e5f 50%, #feb47b 100%);
 }
