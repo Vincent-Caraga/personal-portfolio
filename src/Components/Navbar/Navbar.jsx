@@ -53,7 +53,6 @@ const Navbar = () => {
         >
           CONTACT
         </a>
-        <a href="">TEST</a>
       </ul>
 
       {/* Hamburger Icon*/}
